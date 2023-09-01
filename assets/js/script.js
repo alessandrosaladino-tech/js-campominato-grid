@@ -22,6 +22,7 @@ button.addEventListener("click" , function () {
         fieldEl.addEventListener("click", function(){
             fieldEl.classList.toggle("bg_active")
             fieldEl.classList.toggle("active_color")
+            console.log(`Cella ${i + 1} cliccata`)
         })
     }
     
