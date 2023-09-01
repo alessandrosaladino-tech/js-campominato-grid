@@ -10,6 +10,8 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 const gridEl = document.querySelector(".field");
 const button = document.getElementById("generate");
 const limit = 100;
+
+
 //Genero un ciclo per stampare in pagina tramite il bottone la griglia tramite eventListener e un ciclo for
 button.addEventListener("click" , function () {
     for (let i = 0; i < limit; i++) {
@@ -27,3 +29,25 @@ button.addEventListener("click" , function () {
     }
     
 })
+
+/*
+function generateGrid(gridEl) {
+    button.addEventListener("click" , function () {
+        for (let i = 0; i < limit; i++) {
+            const fieldEl = document.createElement("div")
+            fieldEl.classList = "text-center col_10 border cell "
+            fieldEl.append(i + 1)
+            gridEl.append(fieldEl)
+    
+    
+            fieldEl.addEventListener("click", function(){
+                fieldEl.classList.toggle("bg_active")
+                fieldEl.classList.toggle("active_color")
+                console.log(`Cella ${i + 1} cliccata`)
+            })
+        }
+        
+    })
+}
+
+*/
