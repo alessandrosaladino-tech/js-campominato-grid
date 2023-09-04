@@ -15,6 +15,7 @@ const limit = 100;
 
 //Genero un ciclo per stampare in pagina tramite il bottone la griglia tramite eventListener e un ciclo for
 button.addEventListener("click", function (ev) {
+    gridEl.innerHTML = ""
     for (let i = 0; i < limit; i++) {
         const fieldEl = document.createElement("div")
         fieldEl.classList = "text-center col_10 border cell "
